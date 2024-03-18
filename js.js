@@ -28,25 +28,25 @@
 //     }, 30);
 //   });
   
-document.addEventListener("DOMContentLoaded", function() {
-    var logo = document.querySelector(".logo");
-    logo.style.opacity = 1;
-    setTimeout(function() {
-      logo.style.opacity = 0;
-      setTimeout(function() {
-        logo.style.display = "none";
-        var loadingBar = document.querySelector(".loading-bar");
-        loadingBar.style.width = "100%";
-        setTimeout(function() {
-          document.querySelector(".intro").style.opacity = 0;
-          setTimeout(function() {
-            document.querySelector(".intro").style.display = "none";
-            sessionStorage.setItem("introShown", true);
-          }, 500);
-        }, 2000);
-      }, 500);
-    }, 2000); // Durasi logo muncul selama 2 detik
-  });
+// document.addEventListener("DOMContentLoaded", function() {
+//     var logo = document.querySelector(".logo");
+//     logo.style.opacity = 1;
+//     setTimeout(function() {
+//       logo.style.opacity = 0;
+//       setTimeout(function() {
+//         logo.style.display = "none";
+//         var loadingBar = document.querySelector(".loading-bar");
+//         loadingBar.style.width = "100%";
+//         setTimeout(function() {
+//           document.querySelector(".intro").style.opacity = 0;
+//           setTimeout(function() {
+//             document.querySelector(".intro").style.display = "none";
+//             sessionStorage.setItem("introShown", true);
+//           }, 500);
+//         }, 2000);
+//       }, 500);
+//     }, 2000); // Durasi logo muncul selama 2 detik
+//   });
   
 
   function playClickSound() {
