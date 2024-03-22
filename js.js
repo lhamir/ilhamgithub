@@ -1,52 +1,52 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     // Tampilkan intro
-//     document.getElementById('intro').style.display = 'block';
+document.addEventListener('DOMContentLoaded', function() {
+    // Tampilkan intro
+    document.getElementById('intro').style.display = 'block';
 
-//     // Tampilkan konten utama setelah 3 detik
-//     setTimeout(function() {
-//         document.getElementById('intro').style.display = 'none';
-//         document.getElementById('main-content').style.display = 'block';
-//     }, 3000);
-// });
+    // Tampilkan konten utama setelah 3 detik
+    setTimeout(function() {
+        document.getElementById('intro').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+    }, 3000);
+});
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     var loadingBar = document.querySelector(".loading-bar");
-//     var progress = 0;
-//     var interval = setInterval(function() {
-//       progress++;
-//       loadingBar.style.width = progress + "%";
-//       if (progress >= 100) {
-//         clearInterval(interval);
-//         setTimeout(function() {
-//           document.querySelector(".intro").style.opacity = 0;
-//           setTimeout(function() {
-//             document.querySelector(".intro").style.display = "none";
-//             sessionStorage.setItem("introShown", true);
-//           }, 500);
-//         }, 500);
-//       }
-//     }, 30);
-//   });
+document.addEventListener("DOMContentLoaded", function() {
+    var loadingBar = document.querySelector(".loading-bar");
+    var progress = 0;
+    var interval = setInterval(function() {
+      progress++;
+      loadingBar.style.width = progress + "%";
+      if (progress >= 100) {
+        clearInterval(interval);
+        setTimeout(function() {
+          document.querySelector(".intro").style.opacity = 0;
+          setTimeout(function() {
+            document.querySelector(".intro").style.display = "none";
+            sessionStorage.setItem("introShown", true);
+          }, 500);
+        }, 500);
+      }
+    }, 30);
+  });
   
-// document.addEventListener("DOMContentLoaded", function() {
-//     var logo = document.querySelector(".logo");
-//     logo.style.opacity = 1;
-//     setTimeout(function() {
-//       logo.style.opacity = 0;
-//       setTimeout(function() {
-//         logo.style.display = "none";
-//         var loadingBar = document.querySelector(".loading-bar");
-//         loadingBar.style.width = "100%";
-//         setTimeout(function() {
-//           document.querySelector(".intro").style.opacity = 0;
-//           setTimeout(function() {
-//             document.querySelector(".intro").style.display = "none";
-//             sessionStorage.setItem("introShown", true);
-//           }, 500);
-//         }, 2000);
-//       }, 500);
-//     }, 2000); // Durasi logo muncul selama 2 detik
-//   });
+document.addEventListener("DOMContentLoaded", function() {
+    var logo = document.querySelector(".logo");
+    logo.style.opacity = 1;
+    setTimeout(function() {
+      logo.style.opacity = 0;
+      setTimeout(function() {
+        logo.style.display = "none";
+        var loadingBar = document.querySelector(".loading-bar");
+        loadingBar.style.width = "100%";
+        setTimeout(function() {
+          document.querySelector(".intro").style.opacity = 0;
+          setTimeout(function() {
+            document.querySelector(".intro").style.display = "none";
+            sessionStorage.setItem("introShown", true);
+          }, 500);
+        }, 2000);
+      }, 500);
+    }, 2000); // Durasi logo muncul selama 2 detik
+  });
   
 
   function playClickSound() {
